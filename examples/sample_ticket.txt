@@ -1,0 +1,43 @@
+Title: Payment processing fails for international cards
+
+Description:
+Multiple users have reported that payment processing fails when using 
+international credit cards (non-US issued cards). The error message 
+displayed is "Payment failed. Please try again."
+
+This issue has been reported by 15 users in the past week, primarily 
+from European customers. US-based cards work fine.
+
+Steps to Reproduce:
+1. Create an account or log in
+2. Add items to cart
+3. Proceed to checkout
+4. Enter international credit card details
+5. Click "Process Payment"
+6. Error: "Payment failed. Please try again."
+
+Expected Behavior:
+Payment should process successfully for valid international cards.
+
+Actual Behavior:
+Payment fails with generic error message.
+
+Technical Details:
+- Payment provider: Stripe
+- Error in logs: "currency_mismatch" 
+- Affected regions: EU, UK, Australia, Canada
+
+Business Impact:
+- Lost revenue estimated at $5,000/week
+- Customer complaints increasing
+- Risk of losing international customers
+
+Priority Assessment:
+- Severity: High (revenue impact)
+- Urgency: High (ongoing customer impact)
+
+Workaround:
+Customers can use PayPal as an alternative payment method.
+
+Reporter: support-team@example.com
+Submitted: 2026-01-10

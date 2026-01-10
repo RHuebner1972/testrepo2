@@ -1,0 +1,99 @@
+Sprint Backlog - Sprint 12
+
+Sprint Goal: Implement multi-currency checkout foundation
+
+Available Items:
+
+EPIC: Multi-Currency Support
+
+1. US-101: Currency Selection Component
+   Story Points: 5
+   Description: As a user, I want to select my preferred currency so that I can see prices in my local currency.
+   Priority: High
+   Dependencies: None
+   Acceptance Criteria:
+   - Currency dropdown in header
+   - Remembers selection in local storage
+   - Updates all displayed prices
+   Status: Ready
+
+2. US-102: Currency Conversion Service
+   Story Points: 8
+   Description: As a developer, I need a service to convert prices between currencies so that the system can display accurate prices.
+   Priority: High
+   Dependencies: None
+   Acceptance Criteria:
+   - Fetches rates from OpenExchangeRates API
+   - Caches rates for 4 hours
+   - Handles API failures gracefully
+   Status: Ready
+
+3. US-103: Multi-Currency Checkout Flow
+   Story Points: 13
+   Description: As a user, I want to complete checkout in my selected currency so that I can pay without currency confusion.
+   Priority: High
+   Dependencies: US-101, US-102
+   Acceptance Criteria:
+   - Shows prices in selected currency
+   - Displays conversion rate
+   - Processes payment in selected currency
+   Status: Ready
+
+4. US-104: Multi-Currency Receipt Generation
+   Story Points: 5
+   Description: As a user, I want my receipt to show both my local currency and USD equivalent so that I have clear records.
+   Priority: Medium
+   Dependencies: US-103
+   Acceptance Criteria:
+   - Receipt shows local currency total
+   - Receipt shows USD equivalent
+   - Email receipt formatted correctly
+   Status: Ready
+
+5. US-105: Currency Admin Panel
+   Story Points: 8
+   Description: As an admin, I want to manage supported currencies so that we can control which currencies are available.
+   Priority: Medium
+   Dependencies: US-102
+   Acceptance Criteria:
+   - Add/remove currencies
+   - Enable/disable currencies
+   - Set currency-specific fees
+   Status: Ready
+
+TECH DEBT:
+
+6. TD-201: Stripe API Upgrade
+   Story Points: 3
+   Description: Upgrade Stripe SDK to latest version for multi-currency support.
+   Priority: High
+   Dependencies: None
+   Status: Ready
+
+7. TD-202: Database Migration for Currency Fields
+   Story Points: 5
+   Description: Add currency columns to orders and transactions tables.
+   Priority: High
+   Dependencies: None
+   Status: Ready
+
+BUGS:
+
+8. BUG-301: Price Display Rounding Errors
+   Story Points: 2
+   Description: Prices sometimes show 4 decimal places instead of 2.
+   Priority: Medium
+   Dependencies: None
+   Status: Ready
+
+9. BUG-302: Cart Total Calculation Bug
+   Story Points: 3
+   Description: Cart total doesn't update when quantity changes.
+   Priority: High
+   Dependencies: None
+   Status: Ready
+
+---
+
+Total Available Points: 52
+Recommended Sprint Capacity: 35-40 points
