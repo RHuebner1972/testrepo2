@@ -1,0 +1,106 @@
+# Creatio CRM Backend Analysis - Sample Questions
+# Use these questions with the crew's ask_question() method or CLI
+
+# =============================================================================
+# SCHEMA QUESTIONS
+# =============================================================================
+
+# Basic schema understanding
+What are the core entities in Creatio CRM?
+How is the Contact entity structured?
+What columns does the Account table have?
+What is the relationship between Contact and Account?
+
+# Relationship questions
+How do Opportunities connect to Accounts and Contacts?
+What junction tables exist in Creatio?
+How are Activities related to other entities?
+What is the detail relationship pattern in Creatio?
+
+# Technical schema questions
+What data types are used for storing phone numbers?
+How does Creatio handle lookup references?
+What are the system columns in Creatio entities?
+How is the SysAdminUnit table used for security?
+
+# =============================================================================
+# QUERY QUESTIONS
+# =============================================================================
+
+# Basic queries
+How do I query all contacts for a specific account?
+Write a SQL query to get opportunities closing this quarter
+How do I get activities created in the last 7 days?
+
+# Complex queries
+Show me accounts with their total opportunity value
+How do I query leads grouped by source?
+Write a query for contacts with multiple phone numbers
+
+# OData queries
+How do I query the Contact API with pagination?
+What's the OData syntax for filtering by date range?
+How do I expand related entities in OData?
+
+# Performance questions
+How do I optimize a query joining multiple tables?
+What indexes should I consider for Contact queries?
+How do I efficiently query large datasets?
+
+# =============================================================================
+# METRICS AND KPI QUESTIONS
+# =============================================================================
+
+# Sales metrics
+What KPIs should I track for sales pipeline?
+How do I calculate win rate from Creatio data?
+What is the formula for sales velocity?
+How do I measure average deal size?
+
+# Marketing metrics
+How do I track lead conversion rates?
+What metrics show lead source effectiveness?
+How do I calculate cost per lead from Creatio data?
+
+# Customer service metrics
+What KPIs are important for case management?
+How do I measure first response time?
+What is SLA compliance and how do I calculate it?
+
+# Dashboard questions
+What metrics should be on an executive dashboard?
+How do I design a sales rep performance dashboard?
+What visualizations work best for pipeline metrics?
+
+# =============================================================================
+# DOCUMENTATION QUESTIONS
+# =============================================================================
+
+# Documentation needs
+How do I document the Opportunity entity?
+What should a data dictionary include?
+How do I create an ERD for Creatio?
+
+# Integration questions
+What do I need to integrate with Salesforce?
+How do I map fields between systems?
+What API endpoints are available for Contact?
+
+# =============================================================================
+# ARCHITECTURE QUESTIONS
+# =============================================================================
+
+# Data modeling
+How should I extend the Account entity?
+What are best practices for custom objects?
+How do I maintain upgrade compatibility?
+
+# Performance considerations
+What affects query performance in Creatio?
+How should I design tables for reporting?
+What caching strategies work with Creatio data?
+
+# Data warehouse
+How do I extract data for a data warehouse?
+What ETL patterns work with Creatio?
+How should I design dimensional models for CRM data?

@@ -69,6 +69,8 @@ database = [
 [project.scripts]
 devlifecycle = "devlifecycle_crew.cli:main"
 dlc = "devlifecycle_crew.cli:main"
+creatio-crm = "creatio_crm_crew.cli:main"
+ccrm = "creatio_crm_crew.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/example/devlifecycle-crew"
@@ -78,7 +80,7 @@ Issues = "https://github.com/example/devlifecycle-crew/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["devlifecycle_crew*"]
+include = ["devlifecycle_crew*", "creatio_crm_crew*"]
 
 [tool.black]
 line-length = 88
