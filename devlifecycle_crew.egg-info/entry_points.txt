@@ -1,3 +1,5 @@
 [console_scripts]
+ccrm = creatio_crm_crew.cli:main
+creatio-crm = creatio_crm_crew.cli:main
 devlifecycle = devlifecycle_crew.cli:main
 dlc = devlifecycle_crew.cli:main
