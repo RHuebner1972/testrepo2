@@ -1,0 +1,27 @@
+# CrewAI Agent System for Development Lifecycle Management
+# Core dependencies
+crewai>=0.86.0
+crewai-tools>=0.17.0
+
+# LLM providers
+openai>=1.57.0
+langchain>=0.3.0
+langchain-openai>=0.2.0
+
+# Utilities
+pydantic>=2.10.0
+python-dotenv>=1.0.0
+rich>=13.9.0
+click>=8.1.0
+
+# Data handling
+pyyaml>=6.0.0
+jinja2>=3.1.0
+
+# For ticket/issue management integrations
+requests>=2.32.0
+httpx>=0.28.0
+
+# Database for persistence (optional)
+sqlalchemy>=2.0.0
+aiosqlite>=0.20.0

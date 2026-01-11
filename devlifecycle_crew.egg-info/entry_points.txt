@@ -1,0 +1,3 @@
+[console_scripts]
+devlifecycle = devlifecycle_crew.cli:main
+dlc = devlifecycle_crew.cli:main
